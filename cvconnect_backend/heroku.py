@@ -1,4 +1,4 @@
-from cvconnect_backend.cvconnect_backend.settings import *
+from cvconnect_backend.settings import *
 # Parse database configuration from $DATABASE_URL
 HEROKU = True
 
