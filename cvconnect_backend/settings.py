@@ -86,7 +86,7 @@ WSGI_APPLICATION = 'cvconnect_backend.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.psycopg2',
+        'ENGINE': 'django.db.backends.postgresql',
         'NAME': 'cvconnectdatabase',
     }
 }

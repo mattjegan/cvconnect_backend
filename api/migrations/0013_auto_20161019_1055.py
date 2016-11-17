@@ -20,7 +20,7 @@ class Migration(migrations.Migration):
         migrations.AlterField(
             model_name='jobposting',
             name='compensation',
-            field=models.IntegerField(blank=True, default=''),
+            field=models.IntegerField(blank=True, default=0),
         ),
         migrations.AlterField(
             model_name='jobposting',
