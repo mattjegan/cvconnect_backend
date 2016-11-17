@@ -140,7 +140,7 @@ class ProfileRecommendations(generics.ListAPIView, ):
             image = ProfileImageSerializer(instance=profile.image)
 
             if image.data['image'] is None:
-                profile_data['image'] = 'cvconnect_frontend/img/default.png'
+                profile_data['image'] = 'http://res.cloudinary.com/hjfb74ijq/image/upload/v1479381082/default_rutr05.jpg'
             else:
                 profile_data['image'] = image.data['image']
             ret_data.append(profile_data)
@@ -353,7 +353,7 @@ class ProfileImageList(APIView, ):
 
         ret = image.data
         if ret['image'] is None:
-            ret['image'] = 'cvconnect_frontend/img/default.png'
+            ret['image'] = 'http://res.cloudinary.com/hjfb74ijq/image/upload/v1479381082/default_rutr05.jpg'
 
         return Response(ret, status=200)
 
@@ -522,7 +522,7 @@ class ConnectionList(generics.ListAPIView, ):
             image = ProfileImageSerializer(instance=profile.image)
 
             if image.data['image'] is None:
-                profile_data['image'] = 'cvconnect_frontend/img/default.png'
+                profile_data['image'] = 'http://res.cloudinary.com/hjfb74ijq/image/upload/v1479381082/default_rutr05.jpg'
             else:
                 profile_data['image'] = image.data['image']
             ret_data.append(profile_data)
